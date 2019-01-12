@@ -1,3 +1,11 @@
+/*General*/
+
+blockquote {
+  border-left: solid 0.5em #ddd;
+  padding: 1em 0 1em 2em;
+  font-style: italic;
+}
+
 .container {
   margin: 0 auto;
   max-width: 100%;
@@ -8,26 +16,20 @@ footer {
   margin: 2em 0 0 0;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  align-items: stretch;
-}
-
 hr {
   border: 0;
   border-top: solid 1px #ddd;
 }
 
-blockquote {
-  border-left: solid 0.5em #ddd;
-  padding: 1em 0 1em 2em;
-  font-style: italic;
-}
-
 p, ul, ol, dl, table {
   margin-bottom: 2em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: stretch;
 }
 
 sub {
@@ -40,6 +42,14 @@ sup {
   position: relative;
   top: -0.5em;
   font-size: 0.8em;
+}
+
+/* Form */
+
+form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5em;
 }
 
 /* Header */
@@ -64,6 +74,107 @@ text-align: center;
   -ms-transition: color 0.35s ease-in-out;
   transition: color 0.35s ease-in-out;
 }
+
+/* Icons */
+
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+  ul.icons li {
+    display: inline-block;
+    padding-left: 0;
+  }
+
+  ul.icons a {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    border: 0;
+  }
+
+/* Image */
+
+.image.avatar48 {
+  width: 48px;
+  height: 48px;
+  background: #f00;
+}
+
+  .image.avatar48 img {
+    width: 48px;
+    height: 48px;
+  }
+
+.image.fit {
+  display: block;
+  width: 100%;
+}
+
+.image.featured {
+  display: block;
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+
+.image.left {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+
+.image.centered {
+  display: block;
+  margin: 0 0 2em 0;
+}
+
+  .image.centered img {
+    margin: 0 auto;
+    width: auto;
+  }
+
+/* Item */
+
+.item {
+  box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+  .item header {
+    background: #fff;
+    margin: 0;
+    padding: 1em 0 1em 0;
+    font-size: 0.8em;
+  }
+
+    .item header h3 {
+      font-size: 1em;
+    }
+
+/* List */
+
+ul {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+ul li {
+  padding-left: 0.5em;
+}
+
+ol {
+list-style: decimal;
+padding-left: 1.25em;
+}
+
+ol li {
+  padding-left: 0.25em;
+}
+
+/*Logos*/
 
 #logo {
   position: relative;
@@ -95,34 +206,36 @@ text-align: center;
     top: 0;
   }
 
-  #nav ul {
-		list-style: none;
-		padding-left: 0;
-		margin-bottom: 0;
-	}
+/*Nav*/
 
-		#nav ul li {
-			padding-left: 0;
-		}
+#nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
 
-			#nav ul li a {
-				display: block;
-				padding: 0.5em 1.5em 0.5em 1.5em;
-				color: rgba(255, 255, 255, 0.5);
-				text-decoration: none;
-				outline: 0;
-				border: 0;
-				-moz-transition: none;
-				-webkit-transition: none;
-				-ms-transition: none;
-				transition: none;
-			}
+  #nav ul li {
+    padding-left: 0;
+  }
 
-				#nav ul li a span {
-					position: relative;
-					display: block;
-					font-size: 0.8em;
-				}
+  #nav ul li a {
+    display: block;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -ms-transition: none;
+    transition: none;
+  }
+
+    #nav ul li a span {
+      position: relative;
+      display: block;
+      font-size: 0.8em;
+    }
 
 /* Sections/Article */
 
@@ -138,113 +251,6 @@ section, article {
   
   .row > section, .row > article {
     margin-bottom: 0;
-  }
-
-  /* Icons */
-
-ul.icons {
-  cursor: default;
-  list-style: none;
-  padding-left: 0;
-}
-
-  ul.icons li {
-    display: inline-block;
-    padding-left: 0;
-  }
-
-  ul.icons a {
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    text-align: center;
-    border: 0;
-  }
-
-/* Image */
-
-  .image.avatar48 {
-    width: 48px;
-    height: 48px;
-    background: #f00;
-  }
-
-    .image.avatar48 img {
-      width: 48px;
-      height: 48px;
-    }
-
-  .image.fit {
-    display: block;
-    width: 100%;
-  }
-
-  .image.featured {
-    display: block;
-    width: 100%;
-    margin: 0 0 2em 0;
-  }
-
-  .image.left {
-    float: left;
-    margin: 0 2em 2em 0;
-  }
-
-  .image.centered {
-    display: block;
-    margin: 0 0 2em 0;
-  }
-
-    .image.centered img {
-      margin: 0 auto;
-      width: auto;
-    }
-
-/* Item */
-
-	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
-		margin-bottom: 40px;
-	}
-
-		.item header {
-			background: #fff;
-			margin: 0;
-			padding: 1em 0 1em 0;
-			font-size: 0.8em;
-		}
-
-			.item header h3 {
-				font-size: 1em;
-			}
-
-  /* List */
-
-  ul {
-		list-style: disc;
-		padding-left: 1em;
-	}
-
-  ul li {
-    padding-left: 0.5em;
-  }
-
-ol {
-  list-style: decimal;
-  padding-left: 1.25em;
-}
-
-  ol li {
-    padding-left: 0.25em;
-  }
-
-/* Form */
-
-  form label {
-		display: block;
-		text-align: left;
-		margin-bottom: 0.5em;
   }
 
   /* Table */
