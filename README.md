@@ -26,16 +26,6 @@ Estimate of time needed to complete: 2.5 hours
 
 Start time: 9am
 
-Finish time: 
+Finish time: 12:30pm
 
-Actual time needed to complete:
-
-Number and name of feature: Responsive Design
-
-Estimate of time needed to complete: 
-
-Start time: 
-
-Finish time: 
-
-Actual time needed to complete:
+Actual time needed to complete: 3.5 hours
