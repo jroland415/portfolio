@@ -137,8 +137,7 @@ header > p {
 /* Main */
 
 #main > section.dark {
-  color: #ddd;
-  color: rgba(255, 255, 255, 0.75);
+  color: #000;
 }
 
   #main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
@@ -146,12 +145,12 @@ header > p {
   }
 
   #main > section.dark strong {
-    color: #fff;
+    color: #000;
     border-color: inherit;
   }
 
   #main > section.dark a {
-    color: #fff;
+    color: #000;
     border-color: inherit;
   }
 
@@ -167,7 +166,7 @@ header > p {
 
     #main > section.one {
       background-color: #81918E;
-      background-image: url("../../images/banner.jpg");
+      background-image: url("../../images/rebecca-malone-662430-unsplash.jpg");
     }
 
     #main > section.two {
