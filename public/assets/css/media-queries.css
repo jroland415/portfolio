@@ -1311,9 +1311,9 @@
 
 }
   
-/* Narrow */
+/* Narrow & Tablet*/
 
-@media screen and (min-width: 961px) and (max-width: 1320px) {
+@media screen and (min-width: 737px) and (max-width: 1320px) {
 
   /* Basic */
 
@@ -1378,9 +1378,9 @@
 
 }
   
-/* Narrower */
+/* Mobile */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 736px) {
 
   /* Basic */
 
@@ -1564,10 +1564,6 @@
       }
 
 }
-  
-/* Mobile */
-
-@media screen and (max-width: 736px) {
 
   /* Basic */
 
@@ -1619,5 +1615,3 @@
       #footer .copyright li:first-child {
         margin-top: 0;
       }
-
-}
